@@ -8,3 +8,4 @@ NelmioApiDocBundle:
 
 fos_oauth_server_token:
     resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"
+    methods:  [GET, POST, PUT, DELETE , OPTIONS]
