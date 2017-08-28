@@ -3,6 +3,10 @@
 security:
     encoders:
         FOS\UserBundle\Model\UserInterface: sha512
+
+    role_hierarchy:
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_ADMIN         
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
         in_memory:
@@ -15,7 +19,7 @@ security:
             pattern: ^/oauth/v2/token
             security: false
         api:
-            pattern: ^/                                # All URLs are protected
+            pattern: ^/api                                # All URLs are protected
             fos_oauth: true                            # OAuth2 protected resource
             stateless: true                            # Do no set session cookies
             anonymous: false                           # Anonymous access is not allowed
