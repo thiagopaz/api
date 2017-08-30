@@ -32,7 +32,7 @@ security:
             anonymous: ~
 
     access_control:
-        - {path: ^/api/students.json , roles : ROLE_ADMIN}
+        - {path: ^/api/students.json , roles : [ROLE_ADMIN , ROLE_TEACHER]  }
 
             # activate different ways to authenticate
         
