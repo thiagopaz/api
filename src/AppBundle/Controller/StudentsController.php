@@ -30,8 +30,8 @@ class StudentsController extends FOSRestController
      *      
      * @return Response{'status and data'}
      */
-    public function getStudents(){
-      $repository = $this->getDoctrine()->getRepository("AppBundle:Students");  
+    public function getStudents(){         
+        $repository = $this->getDoctrine()->getRepository("AppBundle:Students"); 
         try{
             $students   = $repository->findAll();         
         }catch(\Exception $e){

@@ -13,3 +13,6 @@ The API will be written in PHP with the Symfony 3 framework. The following SF2 b
 - https://github.com/FriendsOfSymfony/FOSOAuthServerBundle
 - https://github.com/schmittjoh/JMSSerializerBundle
 - https://github.com/nelmio/NelmioApiDocBundle
+
+You put people in Roles eitheir via Console 
+- php bin/console fos:user:promote user role
