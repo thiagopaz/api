@@ -14,13 +14,13 @@ use Symfony\Component\Security\Core\Exception\AccessDeniedException;
 class MeController extends Controller
 {  
      /**
-    * RESTFul action which returns all students   
+    * RESTFul action which returns the data of students   
     * @Route("api/me.json/{id}")
     * @Method("GET")
     * @ApiDoc(
     *  resource = "true",
-    *  description = "My data " ,
-    *  output = "\AppBundle\Entity\User",
+    *  description = "Data for Student" ,
+    *  output = "\AppBundle\Entity\Students",
     *  statusCodes = {
     *      200 = "Returned when successful" ,
     *      400 = "Returned when the page is not found"   
@@ -47,13 +47,13 @@ class MeController extends Controller
     }
 
          /**
-    * RESTFul action which returns all students   
+    * RESTFul action for update data student  
     * @Route("api/me.json/{id}")
     * @Method("POST")
     * @ApiDoc(
     *  resource = "true",
-    *  description = "My data " ,
-    *  output = "\AppBundle\Entity\User",
+    *  description = "Update data students " ,
+    *  output = "\AppBundle\Entity\Students",
     *  statusCodes = {
     *      200 = "Returned when successful" ,
     *      400 = "Returned when the page is not found"  
