@@ -33,7 +33,7 @@ security:
 
     access_control:
         - {path: ^/api/students.json , roles : [ROLE_ADMIN , ROLE_TEACHER], methods: [GET,POST] }
-        - {path: ^/api/me.json , roles: [ROLE_STUDENTS] , methods: [GET, POST]}
+        - {path: ^/api/me.json , roles: [ROLE_STUDENT] , methods: [GET, POST]}
 
             # activate different ways to authenticate
         
