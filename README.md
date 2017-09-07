@@ -50,3 +50,6 @@ Created user admin
 
 You put people in Roles eitheir via Console 
 - php bin/console fos:user:promote user role
+
+## About API doc
+/api/doc
