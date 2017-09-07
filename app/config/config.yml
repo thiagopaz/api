@@ -80,7 +80,8 @@ fos_rest:
             - { priorities: ['json', 'xml'], fallback_format: json, prefer_extension: false }
     view:
         view_response_listener: true
-
+    body_listener: 
+        enabled: false
 fos_user:
     db_driver: orm
     firewall_name: api  

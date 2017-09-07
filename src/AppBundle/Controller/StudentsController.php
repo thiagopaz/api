@@ -21,7 +21,7 @@ class StudentsController extends FOSRestController
      * @ApiDoc(
      *  resource = "true",
      *  description = "Gets all Students" ,
-     *  output = "\AppBundle\Entity\User",
+     *  output = "\AppBundle\Entity\Students",
      *  statusCodes = {
      *      200 = "Returned when successful" ,
      *      400 = "Returned when the page is not found"
@@ -46,14 +46,14 @@ class StudentsController extends FOSRestController
     } 
 
     /**
-     * RESTFul action which returns all students 
+     * RESTFul action which returns specific students 
      * @Route("/api/students.json/{id}")
      * @Method("GET")
      * 
      * @ApiDoc(
      *  resource = true,
-     *  description = "Gets all Students" ,
-     *  output = "\AppBundle\Entity\User",
+     *  description = "Gets Students for Id" ,
+     *  output = "\AppBundle\Entity\Students",
      *  statusCodes = {
      *      200 = "Returned when successful" ,
      *      400 = "Returned when the page is not found"
