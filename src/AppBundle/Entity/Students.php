@@ -162,5 +162,15 @@ class Students
     {
         return $this->dateOfBirth;
     }
+
+    /**
+     * Get user_id
+     *
+     * @return string
+     */
+    public function getUser_id()
+    {
+        return $this->user_id;
+    }
 }
 
